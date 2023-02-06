@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
   def new
-
   end
 
   def create
@@ -8,7 +7,7 @@ class SessionsController < ApplicationController
            User.find_by(username: params[:email_or_username])
     if user && user.authenticate(params[:password])
       session[:user_id] = user.id
-      redirect_to (session[:integer] || user), 
+      redirect_to root_path, 
                   notice: "Welcome back, #{user.name}!"
       session[:intended_url] = nil
     else
@@ -19,6 +18,6 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil 
-    redirect_to rooms_path, notice: "You are now signed out!"
+    redirect_to root_path, notice: "You are now signed out!"
   end
 end
