@@ -72,3 +72,5 @@ group :test do
 end
 
 gem 'turbo-rails', '~> 1.3.3'
+gem 'sass-rails', '>= 6'
+gem 'bootstrap', '~>4.3.1'
