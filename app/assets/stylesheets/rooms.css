@@ -32,6 +32,7 @@ body {
 }
 #chatroom_container {
   height: 100vh;
+  background-color: #020326;
   margin-right: 0px !important;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -48,6 +49,6 @@ body {
   padding: 5px;
   border-radius: 10px;
   margin-bottom: 10px;
-  background-color: #563434;
+  background-color: #1a0101;
   padding: 10px;
 }
